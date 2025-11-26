@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MINDEASE – Find Your Calm</title>
+    <link rel="stylesheet" href="/Frontend/css/style.css" />
+</head>
+
+<body>
+    <header class="me-header">
+        <div class="me-header-inner">
+            <a href="#" class="me-logo">
+                <span class="me-logo-icon">☯</span>
+                <span class="me-logo-text">MindEase</span>
+            </a>
+
+            <button class="me-nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="me-nav" id="mainNav">
+                <a href="#home">Home</a>
+                <a href="#programs">Programs</a>
+                <a href="#about">About</a>
+                <a href="/Frontend/Auth/login.html" class="me-btn me-btn-small me-btn-outline">
+                    Sign In
+                </a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="me-hero" id="home">
+            <div class="me-hero-bg">
+                <div class="me-blob me-blob-1"></div>
+                <div class="me-blob me-blob-2"></div>
+                <div class="me-blob me-blob-3"></div>
+            </div>
+
+            <div class="me-hero-inner">
+                <!-- LEFT COLUMN -->
+                <div class="me-hero-content">
+                    <div class="me-eyebrow">
+                        <span class="me-dot"></span>
+                        <span>Daily calm for busy minds</span>
+                    </div>
+
+                    <h1 class="me-hero-title">
+                        <span>Find your calm,</span>
+                        <span class="me-gradient-text">in just 10 minutes a day.</span>
+                    </h1>
+
+                    <p class="me-hero-subtitle">
+                        MindEase is your modern meditation space with guided sessions, soundscapes,
+                        and mindfulness tools to reset a noisy mind.
+                    </p>
+
+                    <div class="me-hero-actions">
+                        <a href="/Frontend/html/free-seccion.html" class="me-btn me-btn-primary">
+                            Start Free Session
+                        </a>
+
+                        <a href="/Frontend/html/programs.html" class="me-btn me-btn-ghost">
+                            Browse Programs
+                        </a>
+
+                    </div>
+
+                    <div class="me-hero-meta">
+                        <div class="me-meta-item">
+                            <span class="me-meta-value">20k+</span>
+                            <span class="me-meta-label">People relaxed</span>
+                        </div>
+                        <div class="me-meta-item">
+                            <span class="me-meta-value">92%</span>
+                            <span class="me-meta-label">Sleep better in 7 days</span>
+                        </div>
+                        <div class="me-meta-item">
+                            <span class="me-meta-value">4.9★</span>
+                            <span class="me-meta-label">Average rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="me-hero-visual">
+                    <div class="me-session-card">
+                        <div class="me-session-header">
+                            <div>
+                                <p class="me-session-label">Now Playing</p>
+                                <p class="me-session-title">Morning Clarity</p>
+                            </div>
+                            <span class="me-session-badge">Focus</span>
+                        </div>
+
+                        <div class="me-session-wave">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+
+                        <div class="me-session-timeline">
+                            <span class="me-session-time">03:12</span>
+                            <div class="me-progress-bar">
+                                <div class="me-progress-fill"></div>
+                            </div>
+                            <span class="me-session-time">10:00</span>
+                        </div>
+
+                        <div class="me-session-controls">
+                            <button class="me-circle-btn me-circle-btn-sm" aria-label="Previous session">
+                                ‹
+                            </button>
+                            <button class="me-circle-btn me-circle-btn-lg" aria-label="Play/Pause">
+                                ▶
+                            </button>
+                            <button class="me-circle-btn me-circle-btn-sm" aria-label="Next session">
+                                ›
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="me-stats-card">
+                        <div class="me-stats-row">
+                            <div class="me-stat">
+                                <span class="me-stat-label">Today</span>
+                                <span class="me-stat-value">12 min</span>
+                            </div>
+                            <div class="me-stat">
+                                <span class="me-stat-label">Streak</span>
+                                <span class="me-stat-value">7 days</span>
+                            </div>
+                        </div>
+                        <div class="me-stats-pill">
+                            🧘 You're more consistent than 82% of users
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="me-benefits" id="benefits">
+            <div class="me-benefits-bg">
+                <div class="me-benefit-blob me-benefit-blob-1"></div>
+                <div class="me-benefit-blob me-benefit-blob-2"></div>
+            </div>
+
+            <div class="me-benefits-inner">
+                <header class="me-benefits-header">
+                    <p class="me-benefits-eyebrow">Why MindEase works</p>
+                    <h2 class="me-benefits-title">
+                        Designed for <span class="me-benefits-gradient">busy, noisy minds</span>
+                    </h2>
+                    <p class="me-benefits-subtitle">
+                        Not just “relax music”. MindEase uses structured micro-sessions, habit loops,
+                        and sound design to help you calm down and stay consistent.
+                    </p>
+                </header>
+
+                <div class="me-benefits-grid">
+                    <!-- CARD 1 -->
+                    <article class="me-benefit-card" data-benefit>
+                        <div class="me-benefit-icon-wrap">
+                            <div class="me-benefit-icon-ring"></div>
+                            <span class="me-benefit-icon">🧘</span>
+                        </div>
+                        <h3 class="me-benefit-card-title">Guided calm in minutes</h3>
+                        <p class="me-benefit-card-text">
+                            Short, focused meditations that fit in your day, not just on your wishlist.
+                            Pick from 5, 10, or 15-minute sessions.
+                        </p>
+                        <div class="me-benefit-meta">
+                            <span class="me-benefit-pill">Beginner friendly</span>
+                            <span class="me-benefit-pill me-benefit-pill-soft">No “spiritual” jargon</span>
+                        </div>
+                    </article>
+
+                    <!-- CARD 2 -->
+                    <article class="me-benefit-card" data-benefit>
+                        <div class="me-benefit-icon-wrap">
+                            <div class="me-benefit-icon-ring"></div>
+                            <span class="me-benefit-icon">🌙</span>
+                        </div>
+                        <h3 class="me-benefit-card-title">Sleep that actually lands</h3>
+                        <p class="me-benefit-card-text">
+                            Night routines, slow-breath audio, and layered soundscapes built to shut
+                            your brain up so you can finally sleep.
+                        </p>
+                        <div class="me-benefit-meta">
+                            <span class="me-benefit-pill">Sleep stories</span>
+                            <span class="me-benefit-pill me-benefit-pill-soft">Breathing cycles</span>
+                        </div>
+                    </article>
+
+                    <!-- CARD 3 -->
+                    <article class="me-benefit-card" data-benefit>
+                        <div class="me-benefit-icon-wrap">
+                            <div class="me-benefit-icon-ring"></div>
+                            <span class="me-benefit-icon">🎯</span>
+                        </div>
+                        <h3 class="me-benefit-card-title">Focus without the chaos</h3>
+                        <p class="me-benefit-card-text">
+                            Deep-work soundtracks and focus meditations to pull you out of scrolling
+                            and into actual work.
+                        </p>
+                        <div class="me-benefit-meta">
+                            <span class="me-benefit-pill">Focus modes</span>
+                            <span class="me-benefit-pill me-benefit-pill-soft">Distraction shield</span>
+                        </div>
+                    </article>
+
+                    <!-- CARD 4 -->
+                    <article class="me-benefit-card" data-benefit>
+                        <div class="me-benefit-icon-wrap">
+                            <div class="me-benefit-icon-ring"></div>
+                            <span class="me-benefit-icon">📈</span>
+                        </div>
+                        <h3 class="me-benefit-card-title">Built-in discipline</h3>
+                        <p class="me-benefit-card-text">
+                            Streaks, progress rings, and weekly reports that make your calm a habit,
+                            not a once-a-month panic fix.
+                        </p>
+                        <div class="me-benefit-meta">
+                            <span class="me-benefit-pill">Daily streaks</span>
+                            <span class="me-benefit-pill me-benefit-pill-soft">Progress tracking</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Programs / Categories Section -->
+        <section class="me-programs" id="programs">
+            <div class="me-programs-bg">
+                <div class="me-program-blob me-program-blob-1"></div>
+                <div class="me-program-blob me-program-blob-2"></div>
+            </div>
+
+            <div class="me-programs-inner">
+                <!-- Header -->
+                <header class="me-programs-header">
+                    <p class="me-programs-eyebrow">Featured Programs</p>
+                    <h2 class="me-programs-title">
+                        Calm for every <span class="me-programs-gradient">phase of your day</span>
+                    </h2>
+                    <p class="me-programs-subtitle">
+                        Choose from guided paths built for beginners, deep sleepers, focus junkies,
+                        and anyone trying not to explode from stress.
+                    </p>
+                </header>
+
+                <!-- Category Tabs -->
+                <div class="me-programs-tabs" role="tablist">
+                    <button class="me-program-tab is-active" data-filter="all" role="tab">
+                        All
+                    </button>
+                    <button class="me-program-tab" data-filter="beginner" role="tab">
+                        Beginner
+                    </button>
+                    <button class="me-program-tab" data-filter="sleep" role="tab">
+                        Sleep
+                    </button>
+                    <button class="me-program-tab" data-filter="focus" role="tab">
+                        Focus
+                    </button>
+                    <button class="me-program-tab" data-filter="anxiety" role="tab">
+                        Anxiety
+                    </button>
+                </div>
+
+                <!-- Programs Grid -->
+                <div class="me-programs-grid">
+                    <!-- Card 1 -->
+                    <article class="me-program-card" data-program data-category="beginner">
+                        <div class="me-program-top">
+                            <div class="me-program-icon-wrap">
+                                <span class="me-program-icon">✨</span>
+                            </div>
+                            <span class="me-program-tag me-program-tag-soft">7 days</span>
+                        </div>
+
+                        <h3 class="me-program-name">Beginner Calm Path</h3>
+                        <p class="me-program-desc">
+                            A no-BS starter path: 10-minute sessions that teach you how to breathe,
+                            notice, and actually stay present.
+                        </p>
+
+                        <div class="me-program-meta">
+                            <span class="me-program-pill">Level: Easy</span>
+                            <span class="me-program-pill">Daily habit</span>
+                        </div>
+
+                        <div class="me-program-footer">
+                            <span class="me-program-badge">10 min × 7</span>
+                            <button class="me-program-cta" data-cta>
+                                Start Path
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="me-program-card" data-program data-category="sleep">
+                        <div class="me-program-top">
+                            <div class="me-program-icon-wrap">
+                                <span class="me-program-icon">🌌</span>
+                            </div>
+                            <span class="me-program-tag">Most loved</span>
+                        </div>
+
+                        <h3 class="me-program-name">Deep Sleep Stories</h3>
+                        <p class="me-program-desc">
+                            Slow-paced narration + soft sound beds that knock you out without your
+                            brain replaying every dumb thing you’ve said since 2015.
+                        </p>
+
+                        <div class="me-program-meta">
+                            <span class="me-program-pill">Level: All</span>
+                            <span class="me-program-pill">Night routine</span>
+                        </div>
+
+                        <div class="me-program-footer">
+                            <span class="me-program-badge">20–30 min</span>
+                            <button class="me-program-cta" data-cta>
+                                Listen Tonight
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="me-program-card" data-program data-category="focus">
+                        <div class="me-program-top">
+                            <div class="me-program-icon-wrap">
+                                <span class="me-program-icon">🔥</span>
+                            </div>
+                            <span class="me-program-tag me-program-tag-soft">New</span>
+                        </div>
+
+                        <h3 class="me-program-name">Deep Work Focus Blocks</h3>
+                        <p class="me-program-desc">
+                            Guided focus entries + soundscapes that keep you in the zone and away from
+                            yet another “just 5 minutes” scroll session.
+                        </p>
+
+                        <div class="me-program-meta">
+                            <span class="me-program-pill">Level: Intermediate</span>
+                            <span class="me-program-pill">Focus mode</span>
+                        </div>
+
+                        <div class="me-program-footer">
+                            <span class="me-program-badge">25–45 min</span>
+                            <button class="me-program-cta" data-cta>
+                                Start Session
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="me-program-card" data-program data-category="anxiety">
+                        <div class="me-program-top">
+                            <div class="me-program-icon-wrap">
+                                <span class="me-program-icon">💙</span>
+                            </div>
+                            <span class="me-program-tag">Best for stress</span>
+                        </div>
+
+                        <h3 class="me-program-name">Anxiety Reset Kit</h3>
+                        <p class="me-program-desc">
+                            When your chest is tight and your head won’t shut up, this set of
+                            breathwork, grounding and body scans pulls you back down.
+                        </p>
+
+                        <div class="me-program-meta">
+                            <span class="me-program-pill">Level: All</span>
+                            <span class="me-program-pill">Crisis safe</span>
+                        </div>
+
+                        <div class="me-program-footer">
+                            <span class="me-program-badge">5–15 min</span>
+                            <button class="me-program-cta" data-cta>
+                                Calm Down Now
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="me-program-card" data-program data-category="focus">
+                        <div class="me-program-top">
+                            <div class="me-program-icon-wrap">
+                                <span class="me-program-icon">🎧</span>
+                            </div>
+                            <span class="me-program-tag me-program-tag-soft">Soundscapes</span>
+                        </div>
+
+                        <h3 class="me-program-name">Lo-fi Mindful Flow</h3>
+                        <p class="me-program-desc">
+                            Lo-fi beats blended with subtle breathing cues so you don’t just “study
+                            with music” — you actually stay present.
+                        </p>
+
+                        <div class="me-program-meta">
+                            <span class="me-program-pill">Level: Easy</span>
+                            <span class="me-program-pill">Work / Study</span>
+                        </div>
+
+                        <div class="me-program-footer">
+                            <span class="me-program-badge">30–90 min</span>
+                            <button class="me-program-cta" data-cta>
+                                Play Mix
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="me-program-card" data-program data-category="beginner anxiety">
+                        <div class="me-program-top">
+                            <div class="me-program-icon-wrap">
+                                <span class="me-program-icon">🌿</span>
+                            </div>
+                            <span class="me-program-tag me-program-tag-soft">Guided path</span>
+                        </div>
+
+                        <h3 class="me-program-name">Mindful Basics + Calm</h3>
+                        <p class="me-program-desc">
+                            A gentle ramp into mindfulness: posture, breathing, awareness, and
+                            handling overthinking without judging yourself.
+                        </p>
+
+                        <div class="me-program-meta">
+                            <span class="me-program-pill">Level: Beginner</span>
+                            <span class="me-program-pill">Foundations</span>
+                        </div>
+
+                        <div class="me-program-footer">
+                            <span class="me-program-badge">12 min avg</span>
+                            <button class="me-program-cta" data-cta>
+                                View Details
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY MINDEASE WORKS SECTION -->
+        <section class="me-why" id="why">
+            <div class="me-why-bg">
+                <div class="me-why-blob me-why-blob-1"></div>
+                <div class="me-why-blob me-why-blob-2"></div>
+                <div class="me-why-grid-lines"></div>
+            </div>
+
+            <div class="me-why-inner">
+                <!-- LEFT: TEXT + STATS -->
+                <div class="me-why-main">
+                    <header class="me-why-header">
+                        <p class="me-why-eyebrow">Why MindEase works (when others don’t)</p>
+                        <h2 class="me-why-title">
+                            Not just vibes.
+                            <span class="me-why-gradient">Built like a mental gym.</span>
+                        </h2>
+                        <p class="me-why-subtitle">
+                            MindEase combines short, structured practice, habit psychology, and sound design.
+                            Less “mystical guru”, more “practical system that actually fits in your day”.
+                        </p>
+                    </header>
+
+                    <div class="me-why-stats">
+                        <div class="me-why-stat">
+                            <span class="me-why-stat-value" data-counter data-target="92">0</span>
+                            <span class="me-why-stat-label">% report better sleep in 7 days</span>
+                        </div>
+                        <div class="me-why-stat">
+                            <span class="me-why-stat-value" data-counter data-target="18">0</span>
+                            <span class="me-why-stat-label">mins avg daily calm time</span>
+                        </div>
+                        <div class="me-why-stat">
+                            <span class="me-why-stat-value" data-counter data-target="7">0</span>
+                            <span class="me-why-stat-label">days to build the habit streak</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: PILLAR CARDS -->
+                <div class="me-why-grid">
+                    <!-- Card 1 -->
+                    <article class="me-why-card" data-why>
+                        <div class="me-why-card-header">
+                            <div class="me-why-icon-wrap">
+                                <span class="me-why-icon">📚</span>
+                            </div>
+                            <span class="me-why-tag">Evidence-based</span>
+                        </div>
+                        <h3 class="me-why-card-title">Grounded in research</h3>
+                        <p class="me-why-card-text">
+                            Sessions are structured around breathing science, cognitive reframing,
+                            and mindfulness practices that have actual studies behind them.
+                        </p>
+                        <ul class="me-why-list">
+                            <li>Breath pacing to calm the nervous system</li>
+                            <li>Body scanning to reduce anxiety loops</li>
+                            <li>Awareness training instead of overthinking</li>
+                        </ul>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="me-why-card" data-why>
+                        <div class="me-why-card-header">
+                            <div class="me-why-icon-wrap">
+                                <span class="me-why-icon">🧩</span>
+                            </div>
+                            <span class="me-why-tag me-why-tag-soft">Daily system</span>
+                        </div>
+                        <h3 class="me-why-card-title">Built for consistency</h3>
+                        <p class="me-why-card-text">
+                            MindEase nudges you just enough to show up without becoming another
+                            annoying notification you ignore.
+                        </p>
+                        <ul class="me-why-list">
+                            <li>Daily streaks and progress rings</li>
+                            <li>Short “micro calm” sessions for busy days</li>
+                            <li>Smart reminders tied to your routine</li>
+                        </ul>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="me-why-card" data-why>
+                        <div class="me-why-card-header">
+                            <div class="me-why-icon-wrap">
+                                <span class="me-why-icon">🎧</span>
+                            </div>
+                            <span class="me-why-tag">Deep sound design</span>
+                        </div>
+                        <h3 class="me-why-card-title">Sound that shuts up the noise</h3>
+                        <p class="me-why-card-text">
+                            Soundscapes aren’t random “rain sounds”. They’re layered to pull your
+                            focus away from overthinking and into your breath.
+                        </p>
+                        <ul class="me-why-list">
+                            <li>Layered ambient + low-end grounding</li>
+                            <li>Tempo that tracks your breath rhythm</li>
+                            <li>Different profiles for sleep, focus & reset</li>
+                        </ul>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="me-why-card" data-why>
+                        <div class="me-why-card-header">
+                            <div class="me-why-icon-wrap">
+                                <span class="me-why-icon">🧠</span>
+                            </div>
+                            <span class="me-why-tag me-why-tag-soft">Real-life friendly</span>
+                        </div>
+                        <h3 class="me-why-card-title">Made for messy humans</h3>
+                        <p class="me-why-card-text">
+                            No “perfect routine” fantasy. MindEase is designed for people who miss days,
+                            get stressed, and start again — without guilt.
+                        </p>
+                        <ul class="me-why-list">
+                            <li>Gentle restart flows after breaks</li>
+                            <li>Daily check-ins to track mood trends</li>
+                            <li>Tools you can use mid-panic, not just on “calm days”</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING / CTA SECTION -->
+        <section class="me-pricing" id="pricing">
+            <div class="me-pricing-bg">
+                <div class="me-pricing-blob me-pricing-blob-1"></div>
+                <div class="me-pricing-blob me-pricing-blob-2"></div>
+                <div class="me-pricing-grid-lines"></div>
+            </div>
+
+            <div class="me-pricing-inner">
+                <!-- Header -->
+                <header class="me-pricing-header">
+                    <p class="me-pricing-eyebrow">Simple plans, real calm</p>
+                    <h2 class="me-pricing-title">
+                        Pick the way you want to
+                        <span class="me-pricing-gradient">reset your mind.</span>
+                    </h2>
+                    <p class="me-pricing-subtitle">
+                        Start free, upgrade when you’re done “trying” and ready to actually
+                        make calm a habit instead of a once-a-year resolution.
+                    </p>
+                </header>
+
+                <!-- Billing Toggle -->
+                <div class="me-billing-toggle" data-billing-toggle>
+                    <button class="me-billing-btn is-active" data-billing="monthly" type="button">
+                        Monthly
+                    </button>
+                    <button class="me-billing-btn" data-billing="yearly" type="button">
+                        Yearly
+                        <span class="me-billing-save">Save 30%</span>
+                    </button>
+                    <div class="me-billing-pill" aria-hidden="true"></div>
+                </div>
+
+                <!-- Pricing Grid -->
+                <div class="me-pricing-grid">
+                    <!-- Plan 1 -->
+                    <article class="me-price-card" data-plan data-plan-type="starter">
+                        <div class="me-price-card-header">
+                            <div>
+                                <h3 class="me-price-name">Calm Starter</h3>
+                                <p class="me-price-label">Test the waters without commitment.</p>
+                            </div>
+                            <span class="me-price-tag me-price-tag-soft">Free</span>
+                        </div>
+
+                        <div class="me-price-value-wrap">
+                            <span class="me-price-value" data-price data-monthly="0" data-yearly="0">0</span>
+                            <span class="me-price-suffix">/ forever</span>
+                        </div>
+
+                        <p class="me-price-note">
+                            For people who are just trying to not lose it today.
+                        </p>
+
+                        <ul class="me-price-features">
+                            <li>Access to basic guided sessions</li>
+                            <li>Limited sleep stories & soundscapes</li>
+                            <li>7-day streak tracking</li>
+                            <li>Available on mobile & desktop</li>
+                        </ul>
+
+                        <button class="me-price-cta me-price-cta-ghost" type="button">
+                            Start for free
+                        </button>
+                    </article>
+
+                    <!-- Plan 2 (Best Value) -->
+                    <article class="me-price-card me-price-card-featured" data-plan data-plan-type="plus">
+                        <div class="me-price-card-header">
+                            <div>
+                                <h3 class="me-price-name">Deep Focus</h3>
+                                <p class="me-price-label">For people serious about fixing their headspace.</p>
+                            </div>
+                            <span class="me-price-tag">Best value</span>
+                        </div>
+
+                        <div class="me-price-value-wrap">
+                            <span class="me-price-value" data-price data-monthly="499" data-yearly="349">499</span>
+                            <span class="me-price-suffix">/ month</span>
+                        </div>
+
+                        <p class="me-price-note">
+                            Full access to the tools you need to stop spiraling and start focusing.
+                        </p>
+
+                        <ul class="me-price-features">
+                            <li>All meditation paths & categories</li>
+                            <li>Unlimited sleep stories & focus mixes</li>
+                            <li>Advanced analytics & mood tracking</li>
+                            <li>Priority access to new content</li>
+                        </ul>
+
+                        <button class="me-price-cta" type="button">
+                            Start Deep Focus
+                        </button>
+
+                        <div class="me-price-ribbon">
+                            <span>Most picked</span>
+                        </div>
+                    </article>
+
+                    <!-- Plan 3 -->
+                    <article class="me-price-card" data-plan data-plan-type="pro">
+                        <div class="me-price-card-header">
+                            <div>
+                                <h3 class="me-price-name">MindEase Complete</h3>
+                                <p class="me-price-label">For people who want zero excuses left.</p>
+                            </div>
+                            <span class="me-price-tag me-price-tag-soft">Premium</span>
+                        </div>
+
+                        <div class="me-price-value-wrap">
+                            <span class="me-price-value" data-price data-monthly="899" data-yearly="649">899</span>
+                            <span class="me-price-suffix">/ month</span>
+                        </div>
+
+                        <p class="me-price-note">
+                            Everything in Deep Focus plus coaching-style structure so you stick with it.
+                        </p>
+
+                        <ul class="me-price-features">
+                            <li>All Deep Focus features</li>
+                            <li>Weekly structured “reset routines”</li>
+                            <li>Priority early access to new features</li>
+                            <li>Invite-only experimental programs</li>
+                        </ul>
+
+                        <button class="me-price-cta me-price-cta-outline" type="button">
+                            Go Complete
+                        </button>
+                    </article>
+                </div>
+
+                <!-- Final CTA Strip -->
+                <div class="me-final-cta">
+                    <div class="me-final-cta-text">
+                        <h3>Still overthinking it?</h3>
+                        <p>
+                            Start free, do one 10-minute session today, and decide after your brain
+                            actually feels different — not before.
+                        </p>
+                    </div>
+                    <div class="me-final-cta-actions">
+                        <button class="me-final-cta-btn me-final-cta-primary" type="button">
+                            Start Free Session
+                        </button>
+                        <button class="me-final-cta-btn me-final-cta-ghost" type="button">
+                            Browse all programs
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer class="me-footer" id="footer">
+            <div class="me-footer-bg">
+                <div class="me-footer-blob me-footer-blob-1"></div>
+                <div class="me-footer-blob me-footer-blob-2"></div>
+                <div class="me-footer-grid-lines"></div>
+            </div>
+
+            <div class="me-footer-inner">
+                <!-- Top row -->
+                <div class="me-footer-top">
+                    <!-- Brand + newsletter -->
+                    <div class="me-footer-brand">
+                        <a href="#home" class="me-footer-logo">
+                            <span class="me-footer-logo-icon">☯</span>
+                            <span class="me-footer-logo-text">MindEase</span>
+                        </a>
+                        <p class="me-footer-tagline">
+                            Modern meditation and soundscapes for people with busy, noisy minds.
+                            No fluff, just tools that actually fit your day.
+                        </p>
+
+                        <form class="me-footer-form" id="meFooterForm" autocomplete="off">
+                            <label class="me-footer-form-label" for="meFooterEmail">
+                                Get one practical calm tip, once a week.
+                            </label>
+                            <div class="me-footer-form-row">
+                                <div class="me-footer-input-wrap">
+                                    <input type="email" id="meFooterEmail" name="email" placeholder="Enter your email"
+                                        required />
+                                    <span class="me-footer-input-glow"></span>
+                                </div>
+                                <button type="submit" class="me-footer-submit">
+                                    Join
+                                </button>
+                            </div>
+                            <p class="me-footer-form-note" id="meFooterMessage">
+                                No spam. Just one short, useful email.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Link columns -->
+                    <div class="me-footer-links">
+                        <div class="me-footer-column">
+                            <h4 class="me-footer-column-title">Product</h4>
+                            <ul>
+                                <li><a href="#programs">Programs</a></li>
+
+                                <li><a href="#pricing">Pricing</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="me-footer-column">
+                            <h4 class="me-footer-column-title">Support</h4>
+                            <ul>
+                                <li><a href="#help">Help center</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="me-footer-column">
+                            <h4 class="me-footer-column-title">Company</h4>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#careers">Careers</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="me-footer-divider"></div>
+
+                <!-- Bottom row -->
+                <div class="me-footer-bottom">
+                    <div class="me-footer-bottom-left">
+                        <span class="me-footer-copy">
+                            © <span id="meFooterYear"></span> MindEase. All rights reserved.
+                        </span>
+                        <div class="me-footer-legal">
+                            <a href="#terms">Terms</a>
+                            <span>•</span>
+                            <a href="#privacy">Privacy</a>
+                            <span>•</span>
+                            <a href="#cookies">Cookies</a>
+                        </div>
+                    </div>
+
+                    <div class="me-footer-bottom-right">
+                        <div class="me-footer-social">
+                            <a href="#" aria-label="MindEase on Twitter" class="me-footer-social-link">
+                                ✖
+                            </a>
+                            <a href="#" aria-label="MindEase on Instagram" class="me-footer-social-link">
+                                ◎
+                            </a>
+                            <a href="#" aria-label="MindEase on YouTube" class="me-footer-social-link">
+                                ▶
+                            </a>
+                        </div>
+
+                        <button class="me-footer-top-btn" type="button" id="meScrollTopBtn"
+                            aria-label="Scroll back to top">
+                            ↑
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <script src="/Frontend/js/script.js" defer></script>
+</body>
+
+</html>

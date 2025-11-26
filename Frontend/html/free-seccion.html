@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindEase – Start Free</title>
+  <link rel="stylesheet" href="/Frontend/css/free-seccion.css" />
+</head>
+<body>
+  <div class="me-page">
+    <!-- Background -->
+    <div class="me-page-bg">
+      <div class="me-page-blob me-page-blob-1"></div>
+      <div class="me-page-blob me-page-blob-2"></div>
+      <div class="me-page-grid-lines"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="me-page-header">
+      <div class="me-page-header-inner">
+        <a href="/Frontend/index.html" class="me-logo">
+          <span class="me-logo-icon">☯</span>
+          <span class="me-logo-text">MindEase</span>
+        </a>
+
+        <nav class="me-nav">
+          <a href="index.html#programs">Programs</a>
+          <a href="index.html#why">Why it works</a>
+          <a href="index.html#pricing">Pricing</a>
+        </nav>
+
+        <div class="me-header-actions">
+          <a href="/Frontend/Auth/login.html" class="me-btn me-btn-small me-btn-outline">Sign In</a>
+          <a href="/Frontend/Auth/signup.html" class="me-btn me-btn-small me-btn-primary">Create Account</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="me-page-main">
+      <!-- HERO / START FREE -->
+      <section class="me-free-hero">
+        <div class="me-free-hero-inner">
+          <!-- Left -->
+          <div class="me-free-hero-left" data-reveal>
+            <p class="me-eyebrow">Start free</p>
+            <h1 class="me-page-title">
+              10 minutes today.
+              <span class="me-page-gradient">Less chaos this week.</span>
+            </h1>
+            <p class="me-page-subtitle">
+              Start with one free calm session, keep what works, upgrade only if
+              your brain actually feels different — not because a timer bullied you.
+            </p>
+
+            <ul class="me-free-list">
+              <li>No credit card required</li>
+              <li>Access to beginner & quick-reset programs</li>
+              <li>Keep your streaks if you upgrade later</li>
+            </ul>
+
+            <div class="me-free-mini-stats">
+              <div>
+                <span class="me-free-stat-value">7</span>
+                <span class="me-free-stat-label">day free path</span>
+              </div>
+              <div>
+                <span class="me-free-stat-value">92%</span>
+                <span class="me-free-stat-label">feel calmer in a week</span>
+              </div>
+              <div>
+                <span class="me-free-stat-value">10</span>
+                <span class="me-free-stat-label">mins per day</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Start card -->
+          <div class="me-free-hero-right" data-reveal>
+            <div class="me-free-card">
+              <header class="me-free-card-header">
+                <h2>Start free in under 30 seconds</h2>
+                <p>Just your email. No card. No 14-tab onboarding circus.</p>
+              </header>
+
+              <form id="meStartFreeForm" class="me-free-form" novalidate>
+                <div class="me-field">
+                  <label for="freeName" class="me-label">First name</label>
+                  <input
+                    type="text"
+                    id="freeName"
+                    class="me-input"
+                    autocomplete="given-name"
+                    placeholder="Omkar"
+                    required
+                  />
+                  <span class="me-field-border"></span>
+                  <p class="me-field-error" data-error-for="freeName"></p>
+                </div>
+
+                <div class="me-field">
+                  <label for="freeEmail" class="me-label">Work or personal email</label>
+                  <input
+                    type="email"
+                    id="freeEmail"
+                    class="me-input"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <span class="me-field-border"></span>
+                  <p class="me-field-error" data-error-for="freeEmail"></p>
+                </div>
+
+                <div class="me-field me-field-inline">
+                  <label class="me-checkbox">
+                    <input type="checkbox" id="freeUpdates" />
+                    <span class="me-checkbox-box"></span>
+                    <span class="me-checkbox-label">
+                      Send me 1 short calm tip per week (optional).
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Progress -->
+                <div class="me-free-progress" aria-hidden="true">
+                  <div class="me-free-progress-top">
+                    <span class="me-free-progress-label">Creating your calm space</span>
+                    <span class="me-free-progress-status" id="meFreeProgressStatus">
+                      Idle
+                    </span>
+                  </div>
+                  <div class="me-free-progress-bar">
+                    <div class="me-free-progress-fill" id="meFreeProgressFill"></div>
+                  </div>
+                </div>
+
+                <button type="submit" class="me-auth-btn" id="meStartFreeBtn">
+                  Start free now
+                </button>
+
+                <p class="me-auth-meta">
+                  Already have an account?
+                  <a href="login.html">Log in instead</a>
+                </p>
+
+                <p class="me-auth-message" id="meStartFreeMessage"></p>
+              </form>
+
+              <div class="me-free-card-footnote">
+                <span>🔒 Your audio, mood logs and sessions stay private to you.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3-STEP STRIP -->
+      <section class="me-free-steps">
+        <div class="me-free-steps-inner">
+          <h2 class="me-free-steps-title" data-reveal>
+            How your free start works
+          </h2>
+
+          <div class="me-free-steps-grid">
+            <article class="me-free-step-card" data-reveal>
+              <div class="me-free-step-icon">①</div>
+              <h3>Set your current state</h3>
+              <p>
+                Pick what you’re dealing with right now: stress, sleep, focus or
+                “everything is too loud”.
+              </p>
+            </article>
+
+            <article class="me-free-step-card" data-reveal>
+              <div class="me-free-step-icon">②</div>
+              <h3>Do one 10-min session</h3>
+              <p>
+                We guide your breath, attention and body — you just sit, listen
+                and not sabotage yourself for 10 minutes.
+              </p>
+            </article>
+
+            <article class="me-free-step-card" data-reveal>
+              <div class="me-free-step-icon">③</div>
+              <h3>See if your brain feels different</h3>
+              <p>
+                You decide after trying it. Keep free, upgrade, or ghost us —
+                your call, no guilt.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/Frontend/js/free-seccion.js" defer></script>
+</body>
+</html>

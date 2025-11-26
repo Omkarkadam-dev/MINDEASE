@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindEase – Log In</title>
+  <link rel="stylesheet" href="/Frontend/css/login.css" />
+</head>
+<body>
+  <main class="me-auth">
+    <div class="me-auth-bg">
+      <div class="me-auth-blob me-auth-blob-1"></div>
+      <div class="me-auth-blob me-auth-blob-2"></div>
+      <div class="me-auth-grid-lines"></div>
+    </div>
+
+    <div class="me-auth-inner">
+      <!-- LEFT SIDE: BRAND / COPY -->
+      <section class="me-auth-info">
+        <a href="index.html" class="me-auth-logo">
+          <span class="me-auth-logo-icon">☯</span>
+          <span class="me-auth-logo-text">MindEase</span>
+        </a>
+
+        <h1 class="me-auth-title">
+          Drop back into <span class="me-auth-gradient">your calm.</span>
+        </h1>
+        <p class="me-auth-subtitle">
+          Log in to pick up your streak, jump into your last session, and keep your
+          brain from spiraling back into chaos.
+        </p>
+
+        <ul class="me-auth-points">
+          <li>Resume your last meditation in one tap</li>
+          <li>Keep your sleep, focus and mood history synced</li>
+          <li>Custom soundscapes tuned to your patterns</li>
+        </ul>
+
+        <div class="me-auth-badge">
+          <span class="me-auth-badge-dot"></span>
+          <span>Active streaks running right now.</span>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDE: LOGIN CARD -->
+      <section class="me-auth-panel">
+        <div class="me-auth-card">
+          <header class="me-auth-header">
+            <h2>Welcome back</h2>
+            <p>Log in and pick up where you left off.</p>
+          </header>
+
+          <form id="meLoginForm" class="me-auth-form" novalidate>
+            <!-- Email -->
+            <div class="me-field">
+              <label for="email" class="me-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="me-input"
+                autocomplete="email"
+                required
+              />
+              <span class="me-field-border"></span>
+              <p class="me-field-error" data-error-for="email"></p>
+            </div>
+
+            <!-- Password -->
+            <div class="me-field">
+              <label for="password" class="me-label">Password</label>
+              <div class="me-input-with-icon">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="me-input me-input-password"
+                  autocomplete="current-password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="me-toggle-password"
+                  data-toggle="password"
+                  aria-label="Toggle password visibility"
+                >
+                  👁
+                </button>
+              </div>
+
+              <div class="me-strength me-strength-compact">
+                <span class="me-strength-dot" id="meStrengthDot"></span>
+                <span class="me-strength-label" id="meStrengthLabel">Password check idle</span>
+              </div>
+
+              <span class="me-field-border"></span>
+              <p class="me-field-error" data-error-for="password"></p>
+            </div>
+
+            <!-- Remember + Forgot -->
+            <div class="me-login-row">
+              <label class="me-checkbox me-checkbox-small">
+                <input type="checkbox" id="remember" />
+                <span class="me-checkbox-box"></span>
+                <span class="me-checkbox-label">Keep me logged in</span>
+              </label>
+
+              <a href="forgot-password.html" class="me-login-forgot">
+                Forgot password?
+              </a>
+            </div>
+
+            <!-- CTA -->
+            <button type="submit" class="me-auth-btn">
+              Log in
+            </button>
+
+            <p class="me-auth-meta">
+              New to MindEase?
+              <a href="/Frontend/Auth/signup.html">Create an account</a>
+            </p>
+
+            <p class="me-auth-message" id="meFormMessage"></p>
+          </form>
+        </div>
+
+        <!-- Small trust bar -->
+        <div class="me-auth-footnote">
+          <span>⏱ Most people log in in under 10 seconds.</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="/Frontend/js/login.js" defer></script>
+</body>
+</html>

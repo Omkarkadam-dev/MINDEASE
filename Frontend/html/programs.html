@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindEase – Programs</title>
+  <link rel="stylesheet" href="/Frontend/css/program.css" />
+</head>
+<body>
+  <div class="me-page">
+    <!-- Background visuals -->
+    <div class="me-page-bg">
+      <div class="me-page-blob me-page-blob-1"></div>
+      <div class="me-page-blob me-page-blob-2"></div>
+      <div class="me-page-grid-lines"></div>
+    </div>
+
+    <!-- Simple top bar -->
+    <header class="me-page-header">
+      <div class="me-page-header-inner">
+        <a href="/Frontend/index.html" class="me-logo">
+          <span class="me-logo-icon">☯</span>
+          <span class="me-logo-text">MindEase</span>
+        </a>
+
+        <nav class="me-nav">
+          <a href="/Frontend/index.html#programs">Home</a>
+          <a href="/Frontend/index.html#why">Why it works</a>
+          <a href="/Frontend/index.html#pricing">Pricing</a>
+        </nav>
+
+        <div class="me-header-actions">
+          <a href="/Frontend/Auth/login.html" class="me-btn me-btn-small me-btn-outline">Sign In</a>
+          <a href="/Frontend/Auth/signup.html" class="me-btn me-btn-small me-btn-primary">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="me-page-main">
+      <!-- HERO / FILTERS -->
+      <section class="me-programs-hero">
+        <div class="me-programs-hero-inner">
+          <p class="me-eyebrow">Programs</p>
+          <h1 class="me-page-title">
+            Calm paths for
+            <span class="me-page-gradient">every version of you.</span>
+          </h1>
+          <p class="me-page-subtitle">
+            Sleep, focus, anxiety, or just trying to not lose it today — pick a path,
+            drop in for a few minutes, and let MindEase handle the structure.
+          </p>
+
+          <!-- Filters + search -->
+          <div class="me-programs-controls">
+            <div class="me-filters" data-filter-group>
+              <button class="me-filter-pill is-active" data-filter="all">All</button>
+              <button class="me-filter-pill" data-filter="beginner">Beginner</button>
+              <button class="me-filter-pill" data-filter="sleep">Sleep</button>
+              <button class="me-filter-pill" data-filter="focus">Focus</button>
+              <button class="me-filter-pill" data-filter="anxiety">Anxiety</button>
+              <button class="me-filter-pill" data-filter="quick">Under 10 min</button>
+            </div>
+
+            <div class="me-search-wrap">
+              <div class="me-search-inner">
+                <span class="me-search-icon">🔍</span>
+                <input
+                  type="text"
+                  id="meProgramSearch"
+                  placeholder="Search programs (sleep, focus, beginner, panic...)"
+                  autocomplete="off"
+                />
+              </div>
+              <p class="me-search-hint" id="meSearchHint">
+                Showing all programs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGRAMS GRID -->
+      <section class="me-programs-section">
+        <div class="me-programs-grid" id="meProgramsGrid">
+          <!-- Program card 1 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="beginner quick"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">✨</span>
+              </div>
+              <span class="me-program-chip me-program-chip-soft">7 days</span>
+            </div>
+
+            <h2 class="me-program-title">Beginner Calm Path</h2>
+            <p class="me-program-desc">
+              A no-nonsense starter path with 10-minute sessions that teach you how
+              to breathe, notice, and not bail after day 2.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">Level: Easy</span>
+              <span class="me-program-pill">10 min · Daily</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Beginner</span>
+                <span class="me-program-tag">Quick reset</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                Start path
+              </button>
+            </footer>
+          </article>
+
+          <!-- Program card 2 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="sleep"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">🌙</span>
+              </div>
+              <span class="me-program-chip">Most loved</span>
+            </div>
+
+            <h2 class="me-program-title">Deep Sleep Stories</h2>
+            <p class="me-program-desc">
+              Slow, grounded narration plus soft sound beds designed to shut up that
+              “remember this embarrassing thing from 2015?” brain loop.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">All levels</span>
+              <span class="me-program-pill">20–35 min</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Sleep</span>
+                <span class="me-program-tag">Night routine</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                Listen tonight
+              </button>
+            </footer>
+          </article>
+
+          <!-- Program card 3 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="focus"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">🔥</span>
+              </div>
+              <span class="me-program-chip me-program-chip-soft">New</span>
+            </div>
+
+            <h2 class="me-program-title">Deep Work Focus Blocks</h2>
+            <p class="me-program-desc">
+              Guided focus entries, check-ins, and soundscapes that keep you locked
+              in and not “just checking one thing” on your phone.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">Intermediate</span>
+              <span class="me-program-pill">25–50 min</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Focus</span>
+                <span class="me-program-tag">Work / Study</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                Start session
+              </button>
+            </footer>
+          </article>
+
+          <!-- Program card 4 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="anxiety quick"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">💙</span>
+              </div>
+              <span class="me-program-chip">Crisis safe</span>
+            </div>
+
+            <h2 class="me-program-title">Anxiety Reset Kit</h2>
+            <p class="me-program-desc">
+              When your chest is tight and your head is screaming, these micro
+              sessions pull you back to your body instead of your thoughts.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">All levels</span>
+              <span class="me-program-pill">5–15 min</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Anxiety</span>
+                <span class="me-program-tag">Emergency</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                Calm down now
+              </button>
+            </footer>
+          </article>
+
+          <!-- Program card 5 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="focus"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">🎧</span>
+              </div>
+              <span class="me-program-chip me-program-chip-soft">Soundscapes</span>
+            </div>
+
+            <h2 class="me-program-title">Lo-fi Mindful Flow</h2>
+            <p class="me-program-desc">
+              Lo-fi beats with subtle breathing cues so you don’t just listen to
+              music — you actually stay present while you work.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">Easy</span>
+              <span class="me-program-pill">30–90 min</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Focus</span>
+                <span class="me-program-tag">Music</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                Play mix
+              </button>
+            </footer>
+          </article>
+
+          <!-- Program card 6 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="beginner anxiety"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">🌿</span>
+              </div>
+              <span class="me-program-chip me-program-chip-soft">Guided path</span>
+            </div>
+
+            <h2 class="me-program-title">Mindful Basics + Calm</h2>
+            <p class="me-program-desc">
+              Foundations of posture, breathing, awareness and self-kindness so you
+              can stop treating mindfulness like a test.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">Beginner</span>
+              <span class="me-program-pill">12–15 min</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Beginner</span>
+                <span class="me-program-tag">Calm basics</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                View details
+              </button>
+            </footer>
+          </article>
+
+          <!-- Program card 7 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="sleep"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">🛌</span>
+              </div>
+              <span class="me-program-chip">Night reset</span>
+            </div>
+
+            <h2 class="me-program-title">Evening Unwind Ritual</h2>
+            <p class="me-program-desc">
+              A simple three-step evening flow: brain dump, body release, and slow
+              breathing to signal your system it’s finally safe to rest.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">All levels</span>
+              <span class="me-program-pill">15–20 min</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Sleep</span>
+                <span class="me-program-tag">Wind-down</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                Start tonight
+              </button>
+            </footer>
+          </article>
+
+          <!-- Program card 8 -->
+          <article
+            class="me-program-card"
+            data-program
+            data-category="quick focus"
+          >
+            <div class="me-program-card-top">
+              <div class="me-program-icon-wrap">
+                <span class="me-program-icon">⚡</span>
+              </div>
+              <span class="me-program-chip me-program-chip-soft">Micro</span>
+            </div>
+
+            <h2 class="me-program-title">5-Min Focus Primer</h2>
+            <p class="me-program-desc">
+              A fast reset to stop scrolling, breathe, and choose one thing to do
+              next — then actually do it.
+            </p>
+
+            <div class="me-program-meta">
+              <span class="me-program-pill">All levels</span>
+              <span class="me-program-pill">5 min</span>
+            </div>
+
+            <footer class="me-program-footer">
+              <div class="me-program-tags">
+                <span class="me-program-tag">Quick</span>
+                <span class="me-program-tag">Focus</span>
+              </div>
+              <button class="me-program-cta" type="button" data-cta>
+                Do it now
+              </button>
+            </footer>
+          </article>
+        </div>
+
+        <p class="me-programs-empty" id="meProgramsEmpty" hidden>
+          No programs match that. Try a simpler search or clear filters.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="/Frontend/js/program.js" defer></script>
+</body>
+</html>
