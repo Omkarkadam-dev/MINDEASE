@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MindEase — About the Project</title>
+  <link rel="stylesheet" href="/Frontend/css/about.css" />
+</head>
+<body>
+  <main class="me-about">
+    <header class="me-about-hero" id="top">
+      <div class="container">
+        <a class="me-logo" href="index.html" aria-label="MindEase home">☯ MindEase</a>
+        <div class="me-hero-copy">
+          <h1>MindEase — a practical app to quiet a noisy head</h1>
+          <p class="lead">
+            Built to give busy people simple, repeatable tools to reduce stress, sleep better,
+            and focus without endless time commitments or spiritual fluff.
+          </p>
+          <div class="me-hero-cta">
+            <a class="me-btn me-btn-primary" href="start-free.html">Start free</a>
+            <a class="me-btn me-btn-outline" href="programs.html">Browse programs</a>
+          </div>
+        </div>
+      </div>
+      <svg class="me-hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden><path d="M0,40 C320,120 640,0 960,40 C1200,70 1320,20 1440,40 L1440 120 L0 120 Z"></path></svg>
+    </header>
+
+    <section class="container me-section" id="overview" data-reveal>
+      <h2>Project overview</h2>
+      <p>
+        MindEase is a focused meditation and soundscape app designed for people who refuse
+        to spend hours learning how to "relax." It gives concise, evidence-inspired sessions,
+        structured programs, and simple habit mechanics so users get measurable improvements
+        with consistent short practice.
+      </p>
+    </section>
+
+    <section class="container me-section me-split" data-reveal>
+      <div>
+        <h3>The problem</h3>
+        <p>
+          Most meditation products either lean too spiritual, require long sessions, or
+          drown users in choices. People try once, fail, and never return. MindEase fixes that.
+        </p>
+      </div>
+
+      <div>
+        <h3>The solution</h3>
+        <p>
+          Short, actionable paths (5–25 minutes), plain-language guidance, and program
+          structures that nudge real habit formation. Minimal set-up. No credit card to try.
+        </p>
+      </div>
+    </section>
+
+    <section class="container me-section" data-reveal>
+      <h2>Core features</h2>
+      <ul class="me-features">
+        <li><strong>Beginner paths:</strong> step-by-step 7–14 day introductions.</li>
+        <li><strong>Quick-resets:</strong> micro-sessions for immediate anxiety relief.</li>
+        <li><strong>Sleep library:</strong> narrated stories + sound beds to quiet rumination.</li>
+        <li><strong>Focus blocks:</strong> structured soundscapes that remove distraction.</li>
+        <li><strong>Streak & insight:</strong> simple metrics that track habit progress.</li>
+      </ul>
+    </section>
+
+    <section class="container me-section stats" data-reveal>
+      <h2>Impact snapshot (demo data)</h2>
+      <div class="me-stats">
+        <div class="stat" data-target="20000">
+          <div class="stat-value" aria-hidden>0</div>
+          <div class="stat-label">active users</div>
+        </div>
+        <div class="stat" data-target="92">
+          <div class="stat-value">0%</div>
+          <div class="stat-label">reported calmer in 7 days</div>
+        </div>
+        <div class="stat" data-target="10">
+          <div class="stat-value">0</div>
+          <div class="stat-label">minutes per session (avg)</div>
+        </div>
+      </div>
+      <p class="small muted">
+        Numbers shown are illustrative for the project demo. Replace with live analytics.
+      </p>
+    </section>
+
+    <section class="container me-section" data-reveal>
+      <h2>How it works (quick)</h2>
+      <ol class="me-steps">
+        <li><strong>Pick your state:</strong> sleep, focus, or urgent anxiety reset.</li>
+        <li><strong>Do one short session:</strong> guided audio handles the structure.</li>
+        <li><strong>Track & repeat:</strong> simple streaks and one-line progress notes.</li>
+      </ol>
+    </section>
+
+    <section class="container me-section" data-reveal>
+      <h2>Tech & design</h2>
+      <p>
+        Progressive web-first (responsive HTML/CSS/JS), audio-first UX, and a modular program
+        engine that keeps content separate from rendering. Toggle below for a short stack list.
+      </p>
+      <button class="me-toggle-stack" id="toggleStack" aria-expanded="false">Show tech stack</button>
+      <div class="me-stack" id="meStack" hidden>
+        <ul>
+          <li>Frontend: Vanilla JS + modular CSS (responsive, accessible)</li>
+          <li>Audio engine: Web Audio API + adaptive fade</li>
+          <li>Backend (demo): Static JSON + serverless functions (recommended)</li>
+          <li>Analytics: simple event tracking and privacy-first design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container me-section" data-reveal>
+      <h2>Roadmap (short)</h2>
+      <ul class="me-roadmap">
+        <li><strong>1:</strong> polished mobile PWA + offline playback</li>
+        <li><strong>2:</strong> structured coaching flows & cohort programs</li>
+        <li><strong>3:</strong> personalized recommendations via lightweight models</li>
+      </ul>
+    </section>
+
+    <footer class="container me-section me-footer" data-reveal>
+      <p class="muted">Built by a small team obsessing over usable calm. No nonsense, just results.</p>
+      <p class="muted">© <span id="year"></span> MindEase — project info only.</p>
+    </footer>
+  </main>
+
+  <script src="/Frontend/js/about.js" defer></script>
+</body>
+</html>
