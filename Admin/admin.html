@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindEase Admin</title>
+  <link rel="stylesheet" href="/Admin/css/admin.css">
+</head>
+<body>
+
+<header class="me-navbar">
+
+  <!-- LEFT -->
+  <div class="me-nav-left">
+    <button class="me-menu-btn" id="menuBtn">☰</button>
+    <a href="#" class="me-logo">
+      ☯ <span>MINDEASE</span>
+    </a>
+  </div>
+
+  <!-- CENTER -->
+  <div class="me-nav-center">
+    <div class="me-search-box">
+      <input type="text" placeholder="Search users, programs..." id="searchInput">
+      <span class="search-icon">🔍</span>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="me-nav-right">
+
+    <!-- Notifications -->
+    <div class="me-notification" id="notificationBtn">
+      🔔
+      <span class="badge">3</span>
+      <div class="me-dropdown notification-dropdown">
+        <p>New user joined</p>
+        <p>Payment received</p>
+        <p>Server updated</p>
+      </div>
+    </div>
+
+    <!-- Profile -->
+    <div class="me-profile" id="profileBtn">
+      <img src="https://i.pravatar.cc/40" alt="admin">
+      <div class="me-dropdown profile-dropdown">
+        <p>Settings</p>
+        <p>Logout</p>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+<section class="me-dashboard">
+
+  <div class="me-dashboard-header">
+    <h1>Dashboard Overview</h1>
+    <p>Real-time performance of your platform</p>
+  </div>
+
+  <!-- METRICS -->
+  <div class="me-metrics">
+
+    <div class="metric-card" data-value="12450">
+      <h3>Total Users</h3>
+      <p class="metric-number">0</p>
+      <span class="metric-change positive">+12%</span>
+    </div>
+
+    <div class="metric-card" data-value="3200">
+      <h3>Active Users</h3>
+      <p class="metric-number">0</p>
+      <span class="metric-change positive">+8%</span>
+    </div>
+
+    <div class="metric-card" data-value="78500">
+      <h3>Revenue (₹)</h3>
+      <p class="metric-number">0</p>
+      <span class="metric-change positive">+21%</span>
+    </div>
+
+    <div class="metric-card" data-value="8900">
+      <h3>Sessions Today</h3>
+      <p class="metric-number">0</p>
+      <span class="metric-change negative">-3%</span>
+    </div>
+
+  </div>
+
+  <!-- MINI ANALYTICS -->
+  <div class="me-analytics">
+
+    <div class="chart-card">
+      <h3>User Growth</h3>
+      <canvas id="userChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h3>Session Completion</h3>
+      <canvas id="sessionChart"></canvas>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<section class="me-activity">
+
+  <div class="me-activity-header">
+    <h2>Live Activity</h2>
+    <span class="live-indicator">
+      <span class="dot"></span> Live
+    </span>
+  </div>
+
+  <div class="me-activity-feed" id="activityFeed">
+    <!-- Items injected dynamically -->
+  </div>
+
+</section>
+
+<section class="me-programs">
+
+  <!-- HEADER -->
+  <div class="me-programs-header">
+    <h2>Program Management</h2>
+    <button id="addProgramBtn" class="add-btn">+ Add Program</button>
+  </div>
+
+  <!-- FILTER -->
+  <div class="me-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="sleep">Sleep</button>
+    <button class="filter-btn" data-filter="focus">Focus</button>
+    <button class="filter-btn" data-filter="anxiety">Anxiety</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="me-program-grid" id="programGrid"></div>
+
+</section>
+
+<!-- MODAL -->
+<div class="me-modal" id="modal">
+  <div class="me-modal-content">
+    <h3>Add Program</h3>
+
+    <input type="text" id="title" placeholder="Program title">
+    <select id="category">
+      <option value="sleep">Sleep</option>
+      <option value="focus">Focus</option>
+      <option value="anxiety">Anxiety</option>
+    </select>
+    <input type="text" id="duration" placeholder="Duration (e.g. 10 min)">
+
+    <button id="saveProgram">Save</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+  <div class="me-audio-header">
+    <h2>Audio Library</h2>
+    <label class="upload-btn">
+      + Upload Audio
+      <input type="file" id="audioUpload" accept="audio/*" hidden>
+    </label>
+  </div>
+
+  <!-- FILTER -->
+  <div class="me-audio-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="sleep">Sleep</button>
+    <button class="filter-btn" data-filter="focus">Focus</button>
+    <button class="filter-btn" data-filter="relax">Relax</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="me-audio-grid" id="audioGrid"></div>
+
+</section>
+
+<section class="me-users">
+
+  <!-- HEADER -->
+  <div class="me-users-header">
+    <h2>User Management</h2>
+    <input type="text" id="searchUser" placeholder="Search users...">
+  </div>
+
+  <!-- FILTER -->
+  <div class="me-user-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="free">Free</button>
+    <button class="filter-btn" data-filter="paid">Paid</button>
+  </div>
+
+  <!-- TABLE -->
+  <div class="me-table-wrapper">
+    <table class="me-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Plan</th>
+          <th>Status</th>
+          <th>Last Active</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody id="userTable"></tbody>
+    </table>
+  </div>
+
+</section>
+
+<section class="me-payments">
+
+  <!-- HEADER -->
+  <div class="me-payments-header">
+    <h2>Payments & Subscriptions</h2>
+  </div>
+
+  <!-- STATS -->
+  <div class="me-payment-stats">
+
+    <div class="stat-card" data-value="125000">
+      <h3>Total Revenue</h3>
+      <p class="value">0</p>
+    </div>
+
+    <div class="stat-card" data-value="320">
+      <h3>Active Subscriptions</h3>
+      <p class="value">0</p>
+    </div>
+
+    <div class="stat-card" data-value="25">
+      <h3>Failed Payments</h3>
+      <p class="value">0</p>
+    </div>
+
+  </div>
+
+  <!-- TABLE -->
+  <div class="me-payment-table">
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="paymentTable"></tbody>
+    </table>
+  </div>
+
+</section>
+
+
+<section class="me-quick">
+
+  <div class="me-quick-header">
+    <h2>Quick Actions</h2>
+    <p>Execute common tasks instantly</p>
+  </div>
+
+  <div class="me-quick-grid">
+
+    <div class="quick-card" data-action="program">
+      <div class="icon">📦</div>
+      <h3>Add Program</h3>
+      <p>Create a new meditation program</p>
+    </div>
+
+    <div class="quick-card" data-action="audio">
+      <div class="icon">🎵</div>
+      <h3>Upload Audio</h3>
+      <p>Add new sound or session audio</p>
+    </div>
+
+    <div class="quick-card" data-action="user">
+      <div class="icon">👤</div>
+      <h3>Add User</h3>
+      <p>Create or invite new user</p>
+    </div>
+
+    <div class="quick-card" data-action="report">
+      <div class="icon">📊</div>
+      <h3>View Reports</h3>
+      <p>Open analytics dashboard</p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="me-footer">
+
+  <div class="me-footer-left">
+    <span class="logo">☯ MINDEASE</span>
+    <span class="version">v1.0.0</span>
+  </div>
+
+  <div class="me-footer-center">
+    <span id="systemStatus" class="status online">
+      ● System Online
+    </span>
+  </div>
+
+  <div class="me-footer-right">
+    <span id="lastUpdated">Last updated: --</span>
+  </div>
+
+</footer>
+
+
+<script src="/Admin/js/admin.js"></script>
+</body>
+</html>
