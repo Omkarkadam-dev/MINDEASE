@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindEase – Relax</title>
+  <link rel="stylesheet" href="/Frontend/css/relax.css">
+</head>
+<body>
+
+<main class="me-relax">
+
+  <!-- HEADER -->
+  <header class="me-header">
+    <a href="index.html" class="logo">☯ MindEase</a>
+    <nav>
+      <a href="/Frontend/html/programs.html">Programs</a>
+      <a href="/Frontend/html/free-seccion.html">Start Free</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Relax your mind</h1>
+    <p>Slow down. Breathe. Let your system reset.</p>
+
+    <div class="breathing-circle" id="breathingCircle">
+      <span>Breath</span>
+    </div>
+  </section>
+
+  <!-- YOGA MODULE -->
+  <section class="yoga-section">
+    <h2>Yoga for Relaxation</h2>
+
+    <div class="yoga-grid">
+
+      <div class="yoga-card">
+        <h3>Child’s Pose</h3>
+        <p>Relieves tension in the back, shoulders, and chest. Helps calm the nervous system.</p>
+        <span>Duration: 2–5 min</span>
+      </div>
+
+      <div class="yoga-card">
+        <h3>Legs Up The Wall</h3>
+        <p>Improves circulation and deeply relaxes your body after long sitting hours.</p>
+        <span>Duration: 5–10 min</span>
+      </div>
+
+      <div class="yoga-card">
+        <h3>Seated Forward Bend</h3>
+        <p>Stretches spine and hamstrings while promoting mental calmness.</p>
+        <span>Duration: 3–6 min</span>
+      </div>
+
+      <div class="yoga-card">
+        <h3>Cat-Cow Stretch</h3>
+        <p>Releases spinal tension and synchronizes breath with movement.</p>
+        <span>Duration: 2–4 min</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MUSIC SECTION -->
+  <section class="music-section">
+    <h2>Relaxing Sounds</h2>
+
+    <div class="music-player">
+
+      <h3 id="trackName">Rain Ambience</h3>
+
+      <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+      <div class="controls">
+        <button id="playBtn">▶</button>
+        <button id="pauseBtn">⏸</button>
+      </div>
+
+      <input type="range" id="progress" value="0">
+
+      <div class="tracks">
+        <button data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">Rain</button>
+        <button data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">Ocean</button>
+        <button data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">Night</button>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="/Frontend/js/relax.js"></script>
+</body>
+</html>
